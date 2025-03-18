@@ -117,7 +117,7 @@ file_input.addEventListener("change",async (e)=>{
     try{
       const formData = new FormData();
       formData.append("file",file);
-      const res = await fetch("http://localhost:5000/upload",{
+      const res = await fetch("https://demo-app-message-analyzer.onrender.com/upload",{
         method:"POST",
         body:formData
       })
