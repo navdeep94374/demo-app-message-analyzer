@@ -7,9 +7,11 @@ const port = process.env.PORT || 5000;
 const path = require("path");
 const axios = require("axios");
 const { upload } = require("./cloudinary")
+const cors = require("cors")
 
 
 // middleware
+app.use(cors())
 app.use(express.static("client"));
 
 app.get("/", (req, res) => {
