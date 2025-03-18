@@ -45,7 +45,7 @@ const sendMsg = (type,image=null) => {
 };
 
 sendBtn.addEventListener("click", () => {
-  sendMsg();
+  sendMsg("text");
 });
 
 window.addEventListener("keydown", (key) => {
